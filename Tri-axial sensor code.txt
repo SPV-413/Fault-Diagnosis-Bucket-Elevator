@@ -1,0 +1,33 @@
+Tri-axial Accelerometer Sensor ---> Ni-DAQ ---> Laptop (Data Collection)
+
+for i=1:100
+    daq.getDevices
+    daqSession = daq.createSession('ni');
+    daqSession.addAnalogInputChannel('Dev1', 'ai0', 'Accelerometer');
+    daqSession.addAnalogInputChannel('Dev1', 'ai1', 'Accelerometer');
+    daqSession.addAnalogInputChannel('Dev1', 'ai2', 'Accelerometer');
+    daqSession.Rate = 2560;
+    daqSession.DurationInSeconds = 5;
+    daqSession.Channels(1).Sensitivity = 0.010;
+    daqSession.Channels(2).Sensitivity = 0.010;
+    daqSession.Channels(3).Sensitivity = 0.010;
+    [data,time] =daqSession.startForeground();
+    A=[data, time];
+    filename = sprintf('pulleyouterlayerwear-%d.xlsx',i);
+    xlswrite(filename,A)
+    daqSession.release();
+    delete(daqSession);
+    clear daqSession;
+%     x=data(:,1);y=data(:,2);z=data(:,3);
+%    figure
+%     plot(time,x,time,y,time,z)
+%     xlabel('t (seconds)')
+%     ylabel('X(t)')
+    %saveas(gcf,sprintf('trial-%d.fig',i));
+    %close
+%saveas(gcf,'T-2.jpg')
+%yellow is z axis
+%red is y axis
+%blue is x axis
+%x=data(:,1); y=data(:,2); z=data(:,3);plot(time,x)
+end
