@@ -1,5 +1,5 @@
 # Fault Diagnosis of Bucket Elevator - Drive Pulley using Machine Learning 
-This project focuses on fault diagnosis of a bucket elevator drive pulley using machine learning techniques. The study involves fabricating controlled wear conditions, acquiring vibrational data, extracting statistical features, and applying algorithms to detect faults.
+This project focuses on fault diagnosis of a bucket elevator drive pulley using machine learning techniques. The study involves fabricating controlled wear conditions, acquiring vibrational data, extracting statistical features, and applying ML models to detect faults.
 
 ## Objectives
 - Develop an automated fault detection system for bucket elevator drive pulleys.
