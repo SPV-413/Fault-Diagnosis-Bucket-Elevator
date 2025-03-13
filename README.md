@@ -16,7 +16,7 @@ Three drive pulleys were fabricated with artificial wear faults using machining 
 
 ### 2. Data Acquisition
 - Hardware Used:
-  - Accelerometer sensor for vibration measurement.
+  - Tri-axial Accelerometer sensor for vibration measurement.
   - Data Acquisition (DAQ) System for signal conversion.
   - Laptop for data processing and analysis.
 - Collected Data:
