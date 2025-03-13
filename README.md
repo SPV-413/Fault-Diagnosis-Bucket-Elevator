@@ -48,3 +48,11 @@ Used MATLAB’s Machine Learning & Deep Learning Toolbox to train and evaluate t
 ## Results & Conclusion
 - The Support Vector Machine (SVM) model achieved the highest accuracy in classifying pulley conditions.
 - This model can be integrated into real-time monitoring systems to improve reliability and efficiency.
+
+## Key Benefits
+- Early fault detection prevents unexpected failures.
+- Reduces maintenance costs by implementing predictive maintenance.
+- Enhances worker safety by minimizing operational risks.
+
+## Contact
+For any inquiries, reach out via GitHub or email.
